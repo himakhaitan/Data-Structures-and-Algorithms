@@ -10,7 +10,7 @@ void bubbleSort(vector <int> &arr) {
     
     for (int i = 0; i < size - 1; i++) {
         isSwapped = false;
-        for (int j = i+ 1; j < size; j++) {
+        for (int j = 0; j < size - i - 1; j++) {
             if (arr[j] < arr[i]) {
                 swap(arr[j], arr[i]);
                 isSwapped = true;
